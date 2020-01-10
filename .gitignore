@@ -1,5 +1,10 @@
 .project
 .settings/
 
+.sass-cache/
+yarn-error.log
+
 /output/
 /download/
+/build/
+/node_modules/

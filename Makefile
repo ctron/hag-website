@@ -1,18 +1,19 @@
 all: static build
 
-.PHONY: all clean fetch prep build
+.PHONY: all clean prep fetch build
 
 clean:
 	rm -Rf output
-	rm -Rf download
-	-rm static/jquery.min.js
-	-rm static/popper.min.js
+	rm -Rf build
+	rm -Rf static/bootstrap
+	rm -f static/jquery.min.js
+	rm -f static/popper.min.js
 
 static:
 	mkdir -p static
 
-download/bootstrap.zip:
-	mkdir -p download
+build/download/bootstrap-dist.zip:
+	mkdir -p build/download
 	curl -Ls https://github.com/twbs/bootstrap/releases/download/v4.3.1/bootstrap-4.3.1-dist.zip -o "$@"
 
 static/jquery.min.js: static
@@ -21,14 +22,19 @@ static/jquery.min.js: static
 static/popper.min.js: static
 	curl -Ls https://unpkg.com/popper.js@1.15.0/dist/umd/popper.min.js -o "$@"
 
-fetch: download/bootstrap.zip
-fetch: static/jquery.min.js
-fetch: static/popper.min.js
+static/bootstrap/bootstrap.min.css: scss/custom.scss node_modules/bootstrap/scss/bootstrap.scss package.json
+	yarn css:compile
+	yarn css:prefix
+	yarn css:minify
 
-fetch:
+Xstatic/bootstrap/bootstrap.min.css: build/download/bootstrap-dist.zip
 	rm -Rf static/bootstrap
 	mkdir -p static/bootstrap
-	cd static/bootstrap && unzip -qq -j  ../../download/bootstrap.zip
+	cd static/bootstrap && unzip -qq -j  ../../build/download/bootstrap-dist.zip
+
+fetch: static/bootstrap/bootstrap.min.css
+fetch: static/jquery.min.js
+fetch: static/popper.min.js
 
 build:
 	hagen

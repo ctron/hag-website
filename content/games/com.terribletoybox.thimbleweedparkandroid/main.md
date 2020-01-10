@@ -8,16 +8,6 @@ rating: 5
 screenshot: ["shot001.png", "shot002.png"]
 ---
 
-Great game.
+Fans of old-style point&click adventures will love this.
 
-# Foo
-
-# Bar
-
-This *is* foo **bar**.
-
-{{ context.content.main.frontMatter.rating }}
-
-{{#times context.content.main.frontMatter.rating ~}}
-X
-{{~/times}}
+## Summary

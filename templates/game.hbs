@@ -1,9 +1,15 @@
-{{#*inline "header"}}
-<div class="container">
-  <h1>{{ context.content.main.frontMatter.title }}</h1>
-  <p class="lead">{{ context.content.main.frontMatter.description }}</p>
-</div>
+{{#*inline "title"}}
+{{context.content.main.frontMatter.title}} &ndash; {{ compact.site.title }}
 {{/inline}}
+
+{{#*inline "heading"}}
+<h1>
+  {{ context.content.main.frontMatter.title }}
+  <small><span class="badge badge-secondary">{{context.content.main.frontMatter.type}}</span></small>
+</h1>
+<p class="lead">{{ context.content.main.frontMatter.description }}</p>
+{{/inline}}
+
 {{#*inline "main"}}
 <div class="container">
   {{ markdownify ( expand context.content.main.content ) }}

@@ -1,5 +1,12 @@
 
 <div class="container">
-    <h1>{{ compact.site.title }}</h1>
-    <p class="lead">Endless fun</p>
+    <div class="row">
+        <div class="col-md-6">
+            {{>heading}}
+        </div>
+        <div class="col-md-6 mt-auto">
+            <img src="{{ relative_url "/assets/images/header.svg" }}"/>
+        </div>
+    </div>
+
 </div>

@@ -1,10 +1,11 @@
 rules:
 
-  - selector: $..[?(@.frontMatter && @.frontMatter.layout)]
+  - selectorType: layout
     template: "{{ frontMatter.layout }}"
-    outputPattern: "{{ metadata.path }}/{{ metadata.name }}.html"
+    outputPattern: "{{ metadata.parent }}/{{ metadata.name }}.html"
 
-  - selector: $.content.games.content[*]
+  - selectorType: jsonpath
+    selector: $.content.games.content[*]
     template: game
     outputPattern: "games/{{ metadata.name }}/index.html"
 

@@ -1,0 +1,13 @@
+rules:
+
+  - selector: $..[?(@.frontMatter && @.frontMatter.layout)]
+    template: "{{ frontMatter.layout }}"
+    outputPattern: "{{ metadata.path }}/{{ metadata.name }}.html"
+
+  - selector: $.content.games.content[*]
+    template: game
+    outputPattern: "games/{{ metadata.name }}/index.html"
+
+assets:
+  - dir: static
+    to: assets

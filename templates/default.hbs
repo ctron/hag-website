@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="canonical" href="{{ absolute_url ""}}" />
+
+        <link rel="stylesheet" href="{{ relative_url "/assets/bootstrap/bootstrap.min.css" }}">
+        <link rel="stylesheet" href="{{ relative_url "/assets/custom/styles.css" }}">
+        <script src="{{ relative_url "/assets/custom/code.js" }}"></script>
+
+        <title>{{ compact.site.title }}</title>
+    </head>
+
+    <body>
+
+        <header>
+        </header>
+
+        <main id="main" role="main">
+            {{~> main}}
+        </main>
+
+        <footer>
+        </footer>
+
+        <script src="{{ relative_url "/assets/popper.min.js" }}"></script>
+        <script src="{{ relative_url "/assets/jquery.min.js" }}"></script>
+        <script src="{{ relative_url "/assets/bootstrap/bootstrap.min.js" }}"></script>
+
+    </body>
+</html>

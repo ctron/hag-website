@@ -1,3 +1,9 @@
+{{#*inline "header"}}
+<div class="container">
+  <h1>{{ context.content.main.frontMatter.title }}</h1>
+  <p class="lead">{{ context.content.main.frontMatter.description }}</p>
+</div>
+{{/inline}}
 {{#*inline "main"}}
 <div class="container">
   {{ markdownify ( expand context.content.main.content ) }}

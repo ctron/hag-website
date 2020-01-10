@@ -1,5 +1,6 @@
 ---
 title: Thimbleweedpark
+description: Classic point & click adventure.
 type: paid
 category: adventure
 tags: point-and-click

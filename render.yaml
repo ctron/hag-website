@@ -12,3 +12,5 @@ rules:
 assets:
   - dir: static
     to: assets
+  - dir: content
+    glob: "**/*.png"

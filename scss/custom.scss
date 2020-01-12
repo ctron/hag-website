@@ -2,4 +2,6 @@
 $body-bg:     #191d21;
 $body-color:  #d3d3d3;
 
+$card-bg: lighten($body-bg, 10%);
+
 @import "../node_modules/bootstrap/scss/bootstrap";

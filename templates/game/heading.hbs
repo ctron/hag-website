@@ -1,0 +1,12 @@
+<{{h}} class="{{#with hc}}{{this}}{{/with}}">
+  {{ this.content.main.frontMatter.title }}
+  <small><span class="badge badge-primary">{{this.content.main.frontMatter.type}}</span></small>
+  <small><span class="badge badge-secondary">{{this.content.main.frontMatter.category}}</span></small>
+</{{h}}>
+
+<{{l}} class="{{#with lc}}{{this}}{{/with}}">
+{{ this.content.main.frontMatter.description }}&nbsp;
+{{~#each this.content.main.frontMatter.tags as |t| ~}}
+<span class="badge badge-info">{{t}}</span>
+{{~/each~}}
+</{{l}}>

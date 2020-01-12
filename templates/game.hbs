@@ -3,11 +3,7 @@
 {{/inline}}
 
 {{#*inline "heading"}}
-<h1>
-  {{ context.content.main.frontMatter.title }}
-  <small><span class="badge badge-secondary">{{context.content.main.frontMatter.type}}</span></small>
-</h1>
-<p class="lead">{{ context.content.main.frontMatter.description }}</p>
+{{> game/heading context h="h1" l="p" lc="lead"}}
 {{/inline}}
 
 {{#*inline "main"}}

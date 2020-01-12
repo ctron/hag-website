@@ -9,7 +9,7 @@ layout: default
     <div class="card mb-3">
       <div class="row no-gutters">
         <div class="col-md-4">
-          <a href="{{ absolute_url this.content.main.metadata.parent }}">
+          <a href="{{ relative_url this.content.main.metadata.parent }}">
             <img src="{{~> game/default_image this ~}}" class="card-img" alt="{{this.content.main.frontMatter.title}}"/>
           </a>
         </div>
@@ -17,7 +17,7 @@ layout: default
           <div class="card-body">
             {{> game/heading this h="h5" hc="card-title" l="h6" lc="card-subtitle mb-2 text-muted" link="true"}}
             <p class="card-text">{{ markdownify this.content.main.frontMatter.introduction }}</p>
-            <a href="">More…</a>
+            <a href="{{ relative_url this.content.main.metadata.parent }}">More…</a>
           </div>
         </div>
       </div>

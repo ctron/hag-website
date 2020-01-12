@@ -1,2 +1,8 @@
-<h1>{{ compact.site.title }}</h1>
-<p class="lead">Endless fun</p>
+<h1>
+    {{#with context.frontMatter.title }}
+    {{ this }}
+    {{else}}
+    {{ compact.site.title }}
+    {{/with}}
+</h1>
+<p class="lead">{{ compact.site.claim }}</p>

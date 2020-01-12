@@ -10,16 +10,14 @@ layout: default
       <div class="row no-gutters">
         <div class="col-md-4">
           <a href="{{ absolute_url this.content.main.metadata.parent }}">
-          <img src="{{~> game/default_image this ~}}" class="card-img" alt="{{this.content.main.frontMatter.title}}"/>
+            <img src="{{~> game/default_image this ~}}" class="card-img" alt="{{this.content.main.frontMatter.title}}"/>
           </a>
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            {{> game/heading this h="h5" hc="card-title" l="h6" lc="card-subtitle mb-2 text-muted"}}
-<!--
-            <h5 class="card-title">{{this.content.main.frontMatter.title}}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">{{this.content.main.frontMatter.description}}</h6>
--->
+            {{> game/heading this h="h5" hc="card-title" l="h6" lc="card-subtitle mb-2 text-muted" link="true"}}
+            <p class="card-text">{{ markdownify this.content.main.frontMatter.introduction }}</p>
+            <a href="">More…</a>
           </div>
         </div>
       </div>

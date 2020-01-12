@@ -8,7 +8,9 @@
 
 {{#*inline "main"}}
 <div class="container">
-  {{ markdownify ( expand context.content.main.content ) }}
+  {{ markdownify context.content.main.frontMatter.introduction }}
+  {{> game/screenshots context.content.main }}
+  {{ expand ( markdownify context.content.main.content) }}
 </div>
 {{/inline}}
 {{~> default~}}

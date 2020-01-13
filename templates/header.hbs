@@ -9,8 +9,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
 {{#each compact.site.menu as |item|}}
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ relative_url item.url }}">{{item.label}} <span class="sr-only">(current)</span></a>
+                <li class="nav-item {{active item.url}}">
+                    <a
+                        class="nav-link"
+                        href="{{ relative_url item.url }}">{{item.label}}{{#active item.url}} <span class="sr-only">(current)</span>{{/active}}</a>
                 </li>
 {{/each}}
             </ul>

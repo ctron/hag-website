@@ -16,7 +16,14 @@ lead: Endless fun. You know what you pay for.
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            {{> game/heading this h="h5" hc="card-title" l="h6" lc="card-subtitle mb-2 text-muted" link="true"}}
+            <div class="row justify-content-center">
+              <div class="col-12 col-sm-7 col-xl-9">
+                {{> game/heading this h="h5" hc="card-title" l="h6" lc="card-subtitle mb-2 text-muted" link="true"}}
+              </div>
+              <div class="col-6 col-sm-5 col-xl-3 text-center px-1">
+                {{> game/play id=this.metadata.name style="height: 4rem;"}}
+              </div>
+            </div>
             <p class="card-text">{{ markdownify this.content.main.frontMatter.introduction }}</p>
             <a href="{{ relative_url this.content.main.metadata.parent }}">More…</a>
           </div>

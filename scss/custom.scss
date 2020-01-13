@@ -4,4 +4,6 @@ $body-color:  #d3d3d3;
 
 $card-bg: lighten($body-bg, 10%);
 
+$hr-border-color: $body-color;
+
 @import "../node_modules/bootstrap/scss/bootstrap";

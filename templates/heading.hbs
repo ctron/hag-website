@@ -5,4 +5,5 @@
     {{ compact.site.title }}
     {{/with}}
 </h1>
-<p class="lead">{{ compact.site.claim }}</p>
+
+{{#with context.frontMatter.lead}}<p class="lead">{{ this }}</p>{{/with}}

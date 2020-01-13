@@ -1,4 +1,11 @@
 
 <div class="container text-muted">
-    Copyright &copy; Jens Reimann 2019-{{time "%Y"}}. All rights reserved.
+    <p class="float-right">
+
+    </p>
+    <p>&copy; 2019-{{time "%Y"}} Jens Reimann
+        {{#each compact.site.footer as |item|}}
+        • <a href="{{relative_url item.url}}">{{item.label}}</a>
+        {{/each}}
+    </p>
 </div>

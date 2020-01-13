@@ -1,7 +1,13 @@
 title: Honest Android Games
-claim: Endless fun. You know what you pay for.
+
 menu:
   - label: Home
     url: /
   - label: About
-    url: /about
+    url: /about/
+
+footer:
+  - label: Privacy Policy
+    url: /privacy/
+  - label: Impress
+    url: /impress/

@@ -5,7 +5,7 @@ lead: Endless fun. You know what you pay for.
 
 <div class="row">
 
-{{#each full.content.games.content}}
+{{#sorted full.content.games.content "/content/main/frontMatter/timestamp" invert=true}}
   <div class="col-12">
     <div class="card mb-3">
       <div class="row no-gutters">
@@ -31,6 +31,6 @@ lead: Endless fun. You know what you pay for.
       </div>
     </div>
   </div>
-{{/each}}
+{{/sorted}}
 
 </div>

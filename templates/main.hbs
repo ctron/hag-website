@@ -1,3 +1,7 @@
 <div class="container">
+  {{#if (eq context.metadata.type "md")}}
   {{ expand ( markdownify context.content) }}
+  {{else}}
+  {{ expand context.content }}
+  {{/if}}
 </div>

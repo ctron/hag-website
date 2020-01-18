@@ -6,3 +6,7 @@ footer {
     background: #090d11;
     font-size: small;
 }
+
+a:hover, a:active, a:focus {
+    outline: none;
+}

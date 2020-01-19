@@ -14,4 +14,10 @@ images:
 timestamp: "2020-01-12T12:00:00Z"
 ---
 
-## Summary
+## About
+
+Crashlands is a mixture of role playing, action adventure, with a touch of interactive story. You start on a planet,
+need to gather resources, learn new abilities, craft gear and potions and progress through the story by solving quests.
+
+The game definitely offers some re-play value if you like that. But playing through the story once, is a great experience.
+

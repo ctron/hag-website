@@ -32,7 +32,7 @@ If it doesn't bring back any memories … it looks like, you just too young 😁
 what you missed. In a nutshell it is the concept of interactive story-telling. You steer your character,
 exploring the world, talking to people, finding and using items. The more you progress, the more you learn about the story. You need solve some puzzles in order to find your way through the story.
 
-And Thimbleweek park gives you all that you could ask for: beautifully designed graphics, unique characters, a mysterious story, a bit of humour and a murder to solve.
+And Thimbleweed Park gives you all that you could ask for: beautifully designed graphics, unique characters, a mysterious story, a bit of humour and a murder to solve.
 
 And if all that indeed reminds of you the *good old times* … well, Thimbleweed park was created by [Ron Gilbert](https://en.m.wikipedia.org/wiki/Ron_Gilbert) and [Gary Winnick](https://en.m.wikipedia.org/wiki/Gary_Winnick_(game_developer)). Both of them worked for LucasArts, back in the days.
 

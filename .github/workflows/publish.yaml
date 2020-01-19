@@ -19,3 +19,28 @@ jobs:
           docker run \
             -v ${{ github.workspace }}:/homepage \
             quay.io/ctron/hagen:latest
+
+      - name: Configure git
+        run: |
+          git config --global user.name "Jens Reimann"
+          git config --global user.email "ctron@dentrassi.de"
+
+      - name: Publish content
+        env:
+          PUBLISH_KEY: ${{ secrets.PUBLISH_KEY }}
+        run: |
+          eval "$(ssh-agent -s)"
+          ssh-add - <<< "$PUBLISH_KEY"
+          git clone git@github.com:ctron/hag-publish.git
+          rm -Rf hag-publish/*
+          cp -Rvf output/* hag-publish/
+          cd hag-publish
+          git add -A
+          if ! git diff --cached --exit-code; then
+            echo "Changes have been detected, publishing to repo."
+            git commit -m "Build ${GITHUB_WORKFLOW} for ${GITHUB_SHA}"
+            git log --graph --abbrev-commit --date=relative -n 5
+            git push origin
+          else
+            echo "No changes have been detected since last build, nothing to publish"
+          fi

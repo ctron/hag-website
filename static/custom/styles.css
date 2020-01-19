@@ -10,3 +10,9 @@ footer {
 a:hover, a:active, a:focus {
     outline: none;
 }
+
+.game-card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

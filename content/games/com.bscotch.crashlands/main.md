@@ -17,7 +17,22 @@ timestamp: "2020-01-12T12:00:00Z"
 ## About
 
 Crashlands is a mixture of role playing, action adventure, with a touch of interactive story. You start on a planet,
-need to gather resources, learn new abilities, craft gear and potions and progress through the story by solving quests.
+need to gather resources, learn new abilities, craft gear and potions and fight your way through the story, solving quests along the line.
 
-The game definitely offers some re-play value if you like that. But playing through the story once, is a great experience.
+The controls for the game are easy to understand, and you will have learned them pretty quickly. Compared to other
+gamepad-like emulations, the controls feel native to the mobile worlds, and not added at the end of the development
+process.
 
+## Is it for me?
+
+The game definitely offers some re-play value, if that is what you like. Playing through the story once, is a great experience nevertheless.
+
+You have a huge world to roam through, can craft and build your own home, if you like things like that. So the game
+allows you to play it at your own pace.
+
+The game definitely puts up challenge, but also gives you the chance to progress, without loosing your inventory or
+re-starting from the beginning.
+
+## Conclusion
+
+You pay a reasonable price. You get a great game in return. I can definitely recommend it.

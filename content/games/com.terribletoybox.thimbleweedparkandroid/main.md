@@ -36,7 +36,7 @@ And Thimbleweed Park gives you all that you could ask for: beautifully designed 
 
 And if all that indeed reminds of you the *good old times* … well, Thimbleweed park was created by [Ron Gilbert](https://en.m.wikipedia.org/wiki/Ron_Gilbert) and [Gary Winnick](https://en.m.wikipedia.org/wiki/Gary_Winnick_(game_developer)). Both of them worked for LucasArts, back in the days.
 
-## Is it for you?
+## Is it for me?
 
 If you like to solve puzzles, read/listen through the dialogs, and like a slow paced game, it definitely is something
 for you. You can always put it away, and once you mind came up with a new idea on what to try next, you open up the

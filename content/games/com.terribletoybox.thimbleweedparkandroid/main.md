@@ -20,7 +20,9 @@ images:
     - images/ThimbleweedPark-Ransome-Shock.png
     - images/ThimbleweedPark-Ray-InsideDiner.png
     - images/ThimbleweedPark-Reyes-Coroner.png
-timestamp: "2020-01-12T13:00:00Z"
+timestamp:
+  published: "2020-01-12T13:00:00+02:00"
+  updated: "2020-01-19T22:51:00+02:00"
 ---
 
 ## About

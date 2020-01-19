@@ -2,6 +2,9 @@
 layout: default
 title: About this site
 lead: What this is all about.
+timestamp:
+  published: 2020-01-19T22:34:00+02:00
+  updated: 2020-01-19T22:53:00+02:00
 ---
 
 Playing on Android can be fun. But every time I take a look at the Play Store, I feel spammed with titles

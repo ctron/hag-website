@@ -11,7 +11,9 @@ rating: 5
 images:
   default: "images/default.png"
   screenshots: ["images/screen01.png", "images/screen02.png"]
-timestamp: "2020-01-12T12:00:00Z"
+timestamp:
+  published: "2020-01-12T12:00:00+02:00"
+  updated: "2020-01-19T22:52:00+02:00"
 ---
 
 ## About

@@ -5,7 +5,7 @@ lead: What this is all about.
 ---
 
 Playing on Android can be fun. But every time I take a look at the Play Store, I feel spammed with titles
-that just seem to rip you off. I am a casual gamer on mobile, and I am absolutely willing to a few a bit
+that just seem to rip you off. I am a casual gamer on mobile, and I am absolutely willing to pay a bit
 for a decent game.
 
 ## The dark side

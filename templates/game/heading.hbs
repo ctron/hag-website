@@ -1,15 +1,15 @@
 <{{h}}{{#with hc}} class="{{this}}"{{/with}}>
-  {{ this.content.main.frontMatter.title }}
+  {{ this.frontMatter.title }}
 </{{h}}>
 
 <{{l}}{{#with lc}} class="{{this}}"{{/with}}>
-{{ this.content.main.frontMatter.description }}&nbsp;
+{{ this.frontMatter.description }}&nbsp;
 </{{l}}>
 
 <p>
-  <span class="badge badge-primary">{{this.content.main.frontMatter.type}}</span>
-  <span class="badge badge-secondary">{{this.content.main.frontMatter.category}}</span>
-{{~#each this.content.main.frontMatter.tags as |t| }}
+  <span class="badge badge-primary">{{this.frontMatter.type}}</span>
+  <span class="badge badge-secondary">{{this.frontMatter.category}}</span>
+{{~#each this.frontMatter.tags as |t| }}
   <span class="badge badge-info">{{t}}</span>
 {{/each~}}
 </p>

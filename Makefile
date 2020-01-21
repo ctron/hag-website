@@ -46,7 +46,7 @@ fetch: static/jquery.min.js
 fetch: static/popper.min.js
 
 build:
-	hagen -b http://localhost:8080
+	hagen -b http://localhost:8080 -D
 
 run: build
 	cd output && python3 -m http.server 8080

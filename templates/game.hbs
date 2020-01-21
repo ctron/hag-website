@@ -1,36 +1,20 @@
-{{#*inline "title"}}
-{{~context.content.main.frontMatter.title}} &ndash; {{ compact.site.title ~}}
-{{/inline}}
-
 {{#*inline "heading"}}
 <div class="row">
   <div class="col-12 col-sm-6 col-xl-8">
-    {{> game/heading context h="h1" l="p" lc="lead"}}
+    {{> game/heading context.page h="h1" l="p" lc="lead"}}
   </div>
   <div class="col-12 col-sm-6 col-xl-4 text-center text-sm-right">
-    {{> game/play id=context.metadata.name class="img-fluid" style="height: 4rem;"}}
+    {{> game/play id=context.gameId class="img-fluid" style="height: 4rem;"}}
   </div>
 </div>
 {{/inline}}
 
 {{#*inline "main"}}
 <div class="container">
-  {{ markdownify context.content.main.frontMatter.introduction }}
-  {{> game/screenshots context.content.main }}
-  {{ expand ( markdownify context.content.main.content ) }}
+  {{ markdownify context.page.frontMatter.introduction }}
+  {{> game/screenshots context.page }}
+  {{ expand ( markdownify context.content ) }}
 </div>
-{{/inline}}
-
-{{#*inline "meta/publish_timestamp"}}
-{{~ timestamp "%Y-%m-%dT%H:%M:%S%:z" context.content.main.frontMatter.timestamp.published ~}}
-{{/inline}}
-
-{{#*inline "meta/update_timestamp"}}
-{{~#with context.content.main.frontMatter.timestamp.updated ~}}
-{{~ timestamp "%Y-%m-%dT%H:%M:%S%:z" this ~}}
-{{~else~}}
-{{~ timestamp "%Y-%m-%dT%H:%M:%S%:z" context.content.main.frontMatter.timestamp.published ~}}
-{{~/with~}}
 {{/inline}}
 
 {{~> default~}}

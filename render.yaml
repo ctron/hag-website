@@ -6,11 +6,20 @@ rules:
   - selectorType: layout
     template: "{{ frontMatter.layout }}"
     outputPattern: "{{ metadata.parent }}/{{ metadata.name }}.html"
+    context:
+      page: $
+      content: $.content
+      timestamp: $.frontMatter.timestamp
 
   - selectorType: jsonpath
     selector: $.content.games.content[*]
     template: game
     outputPattern: "games/{{ metadata.name }}/index.html"
+    context:
+      page: $.content.main
+      content: $.content.main.content
+      timestamp: $.content.main.frontMatter.timestamp
+      gameId: $.metadata.name
 
 assets:
   - dir: static

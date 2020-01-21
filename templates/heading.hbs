@@ -1,9 +1,9 @@
 <h1>
-    {{#with context.frontMatter.title }}
+    {{#with context.page.frontMatter.title }}
     {{ this }}
     {{else}}
     {{ compact.site.title }}
     {{/with}}
 </h1>
 
-{{#with context.frontMatter.lead}}<p class="lead">{{ this }}</p>{{/with}}
+{{#with context.page.frontMatter.lead}}<p class="lead">{{ this }}</p>{{/with}}

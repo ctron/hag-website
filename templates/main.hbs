@@ -1,5 +1,5 @@
 <div class="container">
-  {{#if (eq context.metadata.type "md")}}
+  {{#if (eq context.page.metadata.type "md")}}
   {{ expand ( markdownify context.content) }}
   {{else}}
   {{ expand context.content }}

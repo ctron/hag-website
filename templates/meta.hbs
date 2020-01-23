@@ -13,7 +13,10 @@
 <meta property="article:modified_time" content="{{~> meta/update_timestamp ~}}" />
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:description" content="This is an update on the Eclipse IoT Packages project. Read about what we achieved in the last few weeks, and what we have in mind for the time ahead." />
+{{~#with context.page.frontMatter.description}}
+{{dump this}}
+<meta name="twitter:description" content="{{this}}" />
+{{~/with}}
 <meta name="twitter:title" content="{{~> title ~}}" />
 <meta name="twitter:site" content="@ctron" />
 <meta name="twitter:creator" content="@ctron" />

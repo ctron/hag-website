@@ -30,3 +30,5 @@ assets:
     to: assets
   - dir: content
     glob: "**/*.png"
+  - dir: html
+    glob: "**/*.html"

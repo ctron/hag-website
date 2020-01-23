@@ -11,6 +11,10 @@ rules:
       content: $.content
       timestamp: $.frontMatter.timestamp
 
+  - selectorType: type
+    selector: txt
+    outputPattern: "{{ metadata.parent }}/{{ metadata.name }}.txt"
+
   - selectorType: jsonpath
     selector: $.content.games.content[*]
     template: game

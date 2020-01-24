@@ -1,17 +1,20 @@
 all: static build
 
-.PHONY: all clean prep fetch build
+.PHONY: all clean clean_images prep fetch build images
 
 POPPER_VERSION=1.16.0
 BOOTSTRAP_VERSION=4.4.1
 
-clean:
+clean: clean_images
 	rm -Rf output
 	rm -Rf build
 	rm -Rf node_modules
 	rm -Rf static/bootstrap
 	rm -f static/jquery.min.js
 	rm -f static/popper.min.js
+
+clean_images:
+	rm -Rf $(WEBP_IMAGES)
 
 static:
 	mkdir -p static
@@ -45,7 +48,17 @@ fetch: static/bootstrap/bootstrap.min.js
 fetch: static/jquery.min.js
 fetch: static/popper.min.js
 
-build:
+%.webp: %.png
+	cwebp -q 90 -m 6 $< -o $@
+
+WEBP_IMAGES=\
+	content/games/com.bscotch.crashlands/images/default.webp \
+	content/games/com.terribletoybox.thimbleweedparkandroid/images/default.webp \
+
+
+images: $(WEBP_IMAGES)
+
+build: images
 	hagen -b http://localhost:8080 -D
 
 run: build

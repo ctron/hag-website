@@ -32,5 +32,7 @@ assets:
     glob: "**/*.png"
   - dir: content
     glob: "**/*.webp"
+  - dir: content
+    glob: "**/*.jpg"
   - dir: html
     glob: "**/*.html"

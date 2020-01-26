@@ -14,7 +14,7 @@ clean: clean_images
 	rm -f static/popper.min.js
 
 clean_images:
-	rm -Rf $(WEBP_IMAGES)
+	rm -Rf $(WEBP_IMAGES) $(1X_IMAGES) $(CVT_IMAGES)
 
 static:
 	mkdir -p static
@@ -51,22 +51,34 @@ assets: static/popper.min.js
 %.1x.png: %.png
 	convert $< -resize 50% $@
 
+content/games/com.bonusxp.legend/images/default.1x.png: content/games/com.bonusxp.legend/images/default.png
+	cp $< $@
+
 %.webp: %.png
 	cwebp -q 90 -m 6 $< -o $@
 
+%.png: %.jpg
+	convert $< $@
+
 1X_IMAGES=\
+	content/games/com.bonusxp.legend/images/default.1x.png \
 	content/games/com.bscotch.crashlands/images/default.1x.png \
 	content/games/com.terribletoybox.thimbleweedparkandroid/images/default.1x.png \
 
 
 WEBP_IMAGES=\
+	content/games/com.bonusxp.legend/images/default.webp \
+	content/games/com.bonusxp.legend/images/default.1x.webp \
 	content/games/com.bscotch.crashlands/images/default.webp \
 	content/games/com.bscotch.crashlands/images/default.1x.webp \
 	content/games/com.terribletoybox.thimbleweedparkandroid/images/default.webp \
 	content/games/com.terribletoybox.thimbleweedparkandroid/images/default.1x.webp \
 
+CVT_IMAGES=\
+	content/games/com.bonusxp.legend/images/default.png \
 
-images: $(1X_IMAGES) $(WEBP_IMAGES)
+
+images: $(1X_IMAGES) $(WEBP_IMAGES) $(CVT_IMAGES)
 
 build: images assets
 	hagen -b http://localhost:8080 -D

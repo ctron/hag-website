@@ -16,10 +16,7 @@ sitemap:
       <div class="row no-gutters">
         <div class="col-md-5">
           <a href="{{ relative_url this.content.main.metadata.parent }}">
-            <picture>
-              <source srcset="{{~> game/default_image this.content.main ~}}.webp"/>
-              <img src="{{~> game/default_image this.content.main ~}}.png" class="card-img game-card-img" alt="{{this.content.main.frontMatter.title}}"/>
-            </picture>
+            {{~> game/default_image this.content.main class="card-img game-card-img" ~}}
           </a>
         </div>
         <div class="col-md-7">

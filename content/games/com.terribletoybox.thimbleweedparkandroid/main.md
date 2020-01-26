@@ -9,7 +9,6 @@ category: adventure
 tags: ["point-and-click"]
 rating: 5
 images:
-  default: "images/default.png"
   screenshots:
     - images/ThimbleweedPark-Agents-Body.png
     - images/ThimbleweedPark-Agents-Street.png

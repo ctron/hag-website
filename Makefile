@@ -1,6 +1,6 @@
 all: static build
 
-.PHONY: all clean clean_images prep fetch build images
+.PHONY: all clean clean_images prep build images
 
 POPPER_VERSION=1.16.0
 BOOTSTRAP_VERSION=4.4.1
@@ -43,22 +43,32 @@ static/bootstrap/bootstrap.min.css: scss/custom.scss node_modules/bootstrap/scss
 	yarn css:prefix
 	yarn css:minify
 
-fetch: static/bootstrap/bootstrap.min.css
-fetch: static/bootstrap/bootstrap.min.js
-fetch: static/jquery.min.js
-fetch: static/popper.min.js
+assets: static/bootstrap/bootstrap.min.css
+assets: static/bootstrap/bootstrap.min.js
+assets: static/jquery.min.js
+assets: static/popper.min.js
+
+%.1x.png: %.png
+	convert $< -resize 50% $@
 
 %.webp: %.png
 	cwebp -q 90 -m 6 $< -o $@
 
+1X_IMAGES=\
+	content/games/com.bscotch.crashlands/images/default.1x.png \
+	content/games/com.terribletoybox.thimbleweedparkandroid/images/default.1x.png \
+
+
 WEBP_IMAGES=\
 	content/games/com.bscotch.crashlands/images/default.webp \
+	content/games/com.bscotch.crashlands/images/default.1x.webp \
 	content/games/com.terribletoybox.thimbleweedparkandroid/images/default.webp \
+	content/games/com.terribletoybox.thimbleweedparkandroid/images/default.1x.webp \
 
 
-images: $(WEBP_IMAGES)
+images: $(1X_IMAGES) $(WEBP_IMAGES)
 
-build: images
+build: images assets
 	hagen -b http://localhost:8080 -D
 
 run: build

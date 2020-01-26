@@ -9,7 +9,6 @@ category: adventure
 tags: ["action", "craft"]
 rating: 5
 images:
-  default: "images/default.png"
   screenshots: ["images/screen01.png", "images/screen02.png"]
 timestamp:
   published: "2020-01-12T12:00:00+02:00"

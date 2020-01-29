@@ -36,3 +36,17 @@ assets:
     glob: "**/*.jpg"
   - dir: html
     glob: "**/*.html"
+
+processors:
+  sitemap:
+    publishedPath: $.context.page.frontMatter.timestamp.published
+    updatedPath: $.context.page.frontMatter.timestamp.updated
+  rss:
+    # having: 
+    site:
+      title: "{{ compact.site.title }}"
+      language: "{{ compact.site.language }}"
+      description: "{{ compact.site.description }}"
+      updatePeriod: hourly
+      updateFrequency: 1
+

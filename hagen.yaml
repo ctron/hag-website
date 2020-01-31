@@ -52,6 +52,6 @@ processors:
       - having:
           path: $.output.template
           value: game
+        title: $.context.page.frontMatter.title
         published: $.context.timestamp.published
         updated: $.context.timestamp.updated
-

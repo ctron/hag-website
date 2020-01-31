@@ -42,11 +42,16 @@ processors:
     publishedPath: $.context.page.frontMatter.timestamp.published
     updatedPath: $.context.page.frontMatter.timestamp.updated
   rss:
-    # having: 
     site:
       title: "{{ compact.site.title }}"
       language: "{{ compact.site.language }}"
       description: "{{ compact.site.description }}"
       updatePeriod: hourly
       updateFrequency: 1
+    pages:
+      - having:
+          path: $.output.template
+          value: game
+        published: $.context.timestamp.published
+        updated: $.context.timestamp.updated
 

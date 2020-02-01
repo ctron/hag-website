@@ -48,10 +48,17 @@ processors:
       description: "{{ compact.site.description }}"
       updatePeriod: hourly
       updateFrequency: 1
+    defaults:
+      published: "{{ context.timestamp.published }}"
+      updated: "{{ context.timestamp.updated }}"
+      title: "{{ context.page.frontMatter.title }}"
+      description: "{{ context.page.frontMatter.description }}"
+      creator: Jens Reimann
     pages:
       - having:
           path: $.output.template
           value: game
-        title: $.context.page.frontMatter.title
-        published: $.context.timestamp.published
-        updated: $.context.timestamp.updated
+        data:
+          content: |
+            {{ markdownify context.page.frontMatter.introduction }}
+            {{ expand ( markdownify context.content ) }}

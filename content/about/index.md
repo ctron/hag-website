@@ -37,7 +37,7 @@ another game like those that I didn't know yet. So it helps me as well.
 
 ## But wait …
 
-… you feel like having a déjà vu? No, it isn't a glitch in the matrix: https://www.reddit.com/r/AndroidGaming/comments/2ggaqp/i_had_made_a_site_called_honest_android_games_and/
+… you feel like having a déjà vu? No, it isn't a glitch in the matrix: [I had made a site called Honest Android Games and have decided to close it down](https://www.reddit.com/r/AndroidGaming/comments/2ggaqp/i_had_made_a_site_called_honest_android_games_and/).
 
 In a nutshell, someone already create a page like this. Unfortunately that person decided to stop doing it. It was a great web page! I really miss it.
 

@@ -45,5 +45,5 @@ But since the idea of a curated list of media isn't that new, I wanted to re-cre
 because I wanted to play around with [Rust](https://www.rust-lang.org/), creating a
 [static home page generator](https://github.com/ctron/hagen) which is up to the task.
 
-And while working on this, I am still undecided how to name it. One the one side, naming it *Honest Android Games*
+And while working on this, I am still undecided how to name it. On the one side, naming it *Honest Android Games*
 feels being a cheap rip off of the original page. On the other side, that is just what this is all about: Honest Android Games!

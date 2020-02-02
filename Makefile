@@ -4,6 +4,7 @@ all: static build
 
 POPPER_VERSION=1.16.0
 BOOTSTRAP_VERSION=4.4.1
+YARN=yarn
 
 clean: clean_images
 	rm -Rf output
@@ -36,12 +37,12 @@ static/bootstrap/bootstrap.min.js: build/download/bootstrap-dist.zip
 	cp -p build/bootstrap/bootstrap.min.js "$@"
 
 node_modules/bootstrap/scss/bootstrap.scss:
-	yarn install
+	$(YARN) install
 
 static/bootstrap/bootstrap.min.css: scss/custom.scss node_modules/bootstrap/scss/bootstrap.scss package.json
-	yarn css:compile
-	yarn css:prefix
-	yarn css:minify
+	$(YARN) css:compile
+	$(YARN) css:prefix
+	$(YARN) css:minify
 
 assets: static/bootstrap/bootstrap.min.css
 assets: static/bootstrap/bootstrap.min.js

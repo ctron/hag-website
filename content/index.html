@@ -16,7 +16,7 @@ sitemap:
       <div class="row no-gutters">
         <div class="col-md-5">
           <a href="{{ relative_url this.content.main.metadata.parent }}">
-            {{~> game/default_image this.content.main class="card-img game-card-img" ~}}
+            {{~> game/default_image this.content.main class="card-img game-card-img" style=this.content.main.frontMatter.images.default.style ~}}
           </a>
         </div>
         <div class="col-md-7">
@@ -29,7 +29,7 @@ sitemap:
                 {{> game/play id=this.metadata.name style="height: 4rem;"}}
               </div>
             </div>
-            <p class="card-text">{{ markdownify this.content.main.frontMatter.introduction }}</p>
+            <div class="card-text">{{ markdownify this.content.main.frontMatter.introduction }}</div>
             <a href="{{ relative_url this.content.main.metadata.parent }}">More…</a>
           </div>
         </div>

@@ -72,6 +72,8 @@ WEBP_IMAGES=\
 	content/games/com.bonusxp.legend/images/default.1x.webp \
 	content/games/com.bscotch.crashlands/images/default.webp \
 	content/games/com.bscotch.crashlands/images/default.1x.webp \
+	content/games/com.DarongStudio.Colorzzle/images/default.webp \
+	content/games/com.DarongStudio.Colorzzle/images/default.1x.webp \
 	content/games/com.terribletoybox.thimbleweedparkandroid/images/default.webp \
 	content/games/com.terribletoybox.thimbleweedparkandroid/images/default.1x.webp \
 	content/games/com.inkle.eightydays/images/default.webp \

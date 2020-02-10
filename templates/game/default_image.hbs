@@ -1,5 +1,5 @@
 <picture>
     <source type="image/webp" srcset="{{ relative_url ( concat this.metadata.parent "/images/default" ) }}.1x.webp, {{ relative_url ( concat this.metadata.parent "/images/default" ) }}.webp 2x" />
     <source type="image/png" srcset="{{ relative_url ( concat this.metadata.parent "/images/default" ) }}.1x.png, {{ relative_url ( concat this.metadata.parent "/images/default" ) }}.png 2x" />
-    <img src="{{ relative_url ( concat this.metadata.parent "/images/default" ) }}.png" class="{{class}}" alt="{{this.frontMatter.title}}"/>
+    <img src="{{ relative_url ( concat this.metadata.parent "/images/default" ) }}.png" class="{{class}}" {{#with style}}style="{{this}}" {{/with~}} alt="{{this.frontMatter.title}}"/>
 </picture>

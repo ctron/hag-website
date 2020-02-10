@@ -33,7 +33,7 @@ lets the story continue. This will not only influence the current situation but 
 the line, depending on which route you take.
 
 Not all routes are known to you, and you can learn more connection through items you pack, chats you have with other
-travelers, or a few other ways.
+travellers, or a few other ways.
 
 ## Is it for me?
 

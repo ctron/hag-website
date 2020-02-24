@@ -78,6 +78,8 @@ WEBP_IMAGES=\
 	content/games/com.terribletoybox.thimbleweedparkandroid/images/default.1x.webp \
 	content/games/com.inkle.eightydays/images/default.webp \
 	content/games/com.inkle.eightydays/images/default.1x.webp \
+	content/games/nz.co.codepoint.minimetro/images/default.webp \
+	content/games/nz.co.codepoint.minimetro/images/default.1x.webp \
 
 
 CVT_IMAGES=\

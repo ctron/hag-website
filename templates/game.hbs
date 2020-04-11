@@ -1,3 +1,31 @@
+{{#*inline "structured"}}
+<script type="application/ld+json">
+{
+  "@content": "https://schema.org",
+  "@type": "Review",
+
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "{{ context.page.frontMatter.rating }}"
+  },
+
+  "author": {
+    "@type": "Person",
+    "name": "Jens Reimann"
+  },
+
+  "itemReviewed": {
+    "@type": "SoftwareApplication",
+    "name": "{{ context.page.frontMatter.title }}",
+    "image": "{{ absolute_url }}images/default.png",
+    "operatingSystem": "ANDROID",
+    "applicationCategory": "https://schema.org/GameApplication"
+  }
+
+}
+</script>
+{{/inline}}
+
 {{#*inline "heading"}}
 <div class="row">
   <div class="col-12 col-sm-6 col-xl-8">

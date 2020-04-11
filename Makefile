@@ -62,12 +62,14 @@ content/games/com.bonusxp.legend/images/default.1x.png: content/games/com.bonusx
 	convert $< $@
 
 1X_IMAGES=\
+	content/games/air.com.midjiwan.polytopia/images/default.1x.png \
 	content/games/com.bonusxp.legend/images/default.1x.png \
 	content/games/com.bscotch.crashlands/images/default.1x.png \
 	content/games/com.terribletoybox.thimbleweedparkandroid/images/default.1x.png \
 
-
 WEBP_IMAGES=\
+	content/games/air.com.midjiwan.polytopia/images/default.webp \
+	content/games/air.com.midjiwan.polytopia/images/default.1x.webp \
 	content/games/com.bonusxp.legend/images/default.webp \
 	content/games/com.bonusxp.legend/images/default.1x.webp \
 	content/games/com.bscotch.crashlands/images/default.webp \

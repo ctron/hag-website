@@ -93,5 +93,7 @@ images: $(1X_IMAGES) $(WEBP_IMAGES) $(CVT_IMAGES)
 build: images assets
 	hagen -b http://localhost:8080 -D
 
-run: build
+run: build serve
+
+serve:
 	cd output && python3 -m http.server 8080

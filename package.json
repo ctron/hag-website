@@ -31,7 +31,9 @@
         "Opera >= 30"
     ],
     "dependencies": {
-        "bootstrap": "4.4.1"
+        "bootstrap": "4.4.1",
+        "jquery": "^3.4.1",
+        "popper.js": "^1.16.1"
     },
     "scripts": {
         "css:compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/custom.scss static/bootstrap/bootstrap.css",

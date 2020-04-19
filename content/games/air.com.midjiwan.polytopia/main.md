@@ -38,7 +38,7 @@ design. Which gives you just enough details, but doesn't look overloaded.
 
 And while I am not a fan of replaying games over and over again, in this case, I did quite an amount of times.
 
-## In app purchases
+## In-app purchases
 
 The basic version of the game is free. And it definitely is fun to play. The game mechanics twisted, just to
 get you into buying anything.

@@ -65,6 +65,7 @@ content/games/com.bonusxp.legend/images/default.1x.png: content/games/com.bonusx
 	content/games/air.com.midjiwan.polytopia/images/default.1x.png \
 	content/games/com.bonusxp.legend/images/default.1x.png \
 	content/games/com.bscotch.crashlands/images/default.1x.png \
+	content/games/com.squareenixmontreal.hitmango/images/default.1x.png \
 	content/games/com.terribletoybox.thimbleweedparkandroid/images/default.1x.png \
 
 WEBP_IMAGES=\

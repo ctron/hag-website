@@ -2,8 +2,8 @@
 title: "Hitman GO"
 description: Turn based, strategy/puzzle game, that feels like a table top game right on your phone.
 introduction: |
-  You are the hitman, and there are several ways to achieve your goal in this turn based strategy puzzle.
-  And it really feels like as if your are moving figures on a board game.
+  You are the hitman, and there are several ways to achieve your goal in this turn-based strategy puzzle.
+  And it really feels like you are moving figures on a board game.
 type: inapp-extras
 category: puzzle
 tags: ["sneak", "shoot", "table top" ]

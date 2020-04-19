@@ -18,7 +18,7 @@ jobs:
         run: |
           docker run \
             -v ${{ github.workspace }}:/homepage \
-            quay.io/ctron/hagen:0.1.4
+            quay.io/ctron/hagen:0.1.5
 
       - name: Configure git
         run: |
